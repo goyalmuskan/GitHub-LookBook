@@ -4,7 +4,7 @@ function fetchRepos() {
     .then(response => response.text())
     .then((result) => {
         var repo = JSON.parse(result);
-        var repoList = '<div class="container"><center><div class="row">';
+        var repoList = '<div class="container"><center>';
         for (index = 0; index < repo.length; index++) {
            repoList += `<div class="card" style="width: 18rem;">
            <div class="card-body">
@@ -14,9 +14,10 @@ function fetchRepos() {
            <i class="fa fa-code-fork">&nbsp;${repo[index].forks_count}&nbsp;</i></p>
            <a href="${repo[index].html_url}" class="btn btn-primary">VISIT THE REPO</a>
            </div>
-           </div>`
+           </div>
+           <br>`
         }
-        repoList += '</div></center></div>';
+        repoList += '</center></div>';
         document.getElementById('info').innerHTML = repoList;
     })
     .catch(error => console.log('error', error));
