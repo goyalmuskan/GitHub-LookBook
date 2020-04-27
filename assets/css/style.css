@@ -1,4 +1,35 @@
-.navbar-dark .navbar-nav .nav-link {
+.navbar-data {
     color: rgb(255, 255, 255);
     font-weight: bold;
+}
+
+#name {
+    width: 60%;
+}
+
+#name:focus {
+    outline: none;
+}
+
+.repo {
+    background-color: blueviolet;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+.repo:hover {
+    background-color: rgb(103, 34, 168);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+button:active {
+    outline: none;
+    border: none;
+}
+    
+button:focus {
+    outline: none !important;
 }
