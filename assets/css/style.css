@@ -33,3 +33,16 @@ button:active {
 button:focus {
     outline: none !important;
 }
+
+footer {
+    background-color: azure;
+}
+
+footer hr{
+    width: 95%;
+}
+
+footer .fa {
+    font-size: 18px;
+    color: rgba(137, 43, 226, 0.699);
+}

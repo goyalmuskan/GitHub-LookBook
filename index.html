@@ -24,13 +24,38 @@
             <center>
                 <img src="./assets/images/github.png" width="450px">
                 <br>
-                <input type="text" id="name" class="mb-1"><br>
-                <button class="btn btn-md repo" onClick="fetchRepos()">FETCH REPOS</button>
+                <input type="text" id="name" class="mb-4"><br>
+                <div class="form-check my-2">
+                    <label class="form-check-label">
+                      <input type="radio" class="form-check-input" name="optradio">Search this profile
+                    </label>
+                </div>
+                <div class="form-check my-2">
+                    <label class="form-check-label">
+                      <input type="radio" class="form-check-input" name="optradio">Compare two profiles
+                    </label>
+                </div>
+                <div class="form-check my-2">
+                    <label class="form-check-label">
+                      <input type="radio" class="form-check-input" name="optradio" disabled>Filter repositories according to technology used
+                    </label>
+                </div>
+                <br>
+                <button class="btn btn-md repo mt-2 mb-5" onClick="fetchRepos()">FETCH REPOS</button>
             </center>
         </div>
         <section id="info">
 
         </section>
+        <footer>
+            <hr class="my-1">
+            <center>
+            <div class="my-2">Made With ❤ by MUSKAN GOYAL.</div>
+            <div class="my-2">
+            <i class="fa fa-linkedin"></i> &nbsp; <i class="fa fa-github"></i> &nbsp; <i class="fa fa-envelope"></i>
+            </div>
+            </center>
+        </footer>
         <script src="./assets/scripts/script.js"></script>
     </body>
 </html>
