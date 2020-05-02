@@ -1,5 +1,7 @@
 body, html{
     height: 100vh;
+    color: white;
+    background-color: black;
 }
 
 /*
@@ -52,8 +54,8 @@ footer .fa {
     -moz-border-radius: 50px;
     border-radius: 50px;
     padding: 15px 30px;
-    border: 2px solid rgba(0, 0, 0, 0.178);
-    width: 50%;
+    border: none;
+    width: 40%;
 }
 
 input:focus {
@@ -61,7 +63,7 @@ input:focus {
 }
 
 .main-content {
-    margin-top: 25vh;
+    margin-top: 12vh;
 }
 
 .main-content p{
@@ -86,7 +88,7 @@ input:focus {
 }
 
 .footer {
-    margin-top: 45vh;
+    margin-top: 20vh;
 }
 
 .footer a{
@@ -97,3 +99,13 @@ input:focus {
 .footer a:hover{
     border-bottom: 2px solid blueviolet;
 }
+
+.footer .follow:hover{
+    border-bottom: none;
+}
+
+#info {
+    color: black;
+}
+
+
