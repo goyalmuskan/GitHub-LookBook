@@ -1,8 +1,8 @@
-.navbar-data {
-    color: rgb(255, 255, 255);
-    font-weight: bold;
+body, html{
+    height: 100vh;
 }
 
+/*
 #name {
     width: 60%;
 }
@@ -45,4 +45,55 @@ footer hr{
 footer .fa {
     font-size: 18px;
     color: rgba(137, 43, 226, 0.699);
+}*/
+
+.main input{
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    padding: 15px 30px;
+    border: 2px solid rgba(0, 0, 0, 0.178);
+    width: 50%;
+}
+
+input:focus {
+    outline: none;
+}
+
+.main-content {
+    margin-top: 25vh;
+}
+
+.main-content p{
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.repo {
+    background-color: blueviolet;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 10em;
+    padding: 14px 20px;
+}
+
+.repo:hover {
+    background-color: rgb(103, 34, 168);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.footer {
+    margin-top: 45vh;
+}
+
+.footer a{
+    text-decoration: none;
+    color: blueviolet;
+}
+
+.footer a:hover{
+    border-bottom: 2px solid blueviolet;
 }

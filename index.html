@@ -14,16 +14,14 @@
         <link href="./assets/css/style.css" rel="stylesheet">
     </head>
     <body>
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center">
-            <ul class="navbar-nav">
-              <li class="navbar-data">
-                GitHub LookBook
-              </li>
-            </ul>
-         </nav>
-        <br>
-        <div class="container py-2">
+        <div class="main container py-2">
             <center>
+              <div class="main-content">
+              <p class="mb-5">GitHub LookBook.</p>
+              <input type="text" id="name" placeholder="Enter a github username...">
+              <button class="btn btn-md repo" onClick="fetchRepos()">FETCH REPOS</button>
+              </div>
+              <!--
                 <img src="./assets/images/github.png" width="450px">
                 <br>
                 <input type="text" id="name" class="mb-4"><br>
@@ -44,11 +42,18 @@
                 </div>
                 <br>
                 <button class="btn btn-md repo mt-2 mb-5" onClick="fetchRepos()">FETCH REPOS</button>
+              -->
             </center>
         </div>
         <section id="info">
 
         </section>
+        <div class="footer">
+          <center>
+          <p>Made With ❤️ by <span style="color: blueviolet;">@</span><a href="">goyalmuskan</a>.</p>
+          </center>
+        </div>
+      <!--
         <footer>
             <hr class="my-1">
             <center>
@@ -58,6 +63,7 @@
             </div>
             </center>
         </footer>
+      -->
         <script src="./assets/scripts/script.js"></script>
     </body>
 </html>
