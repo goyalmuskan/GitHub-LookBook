@@ -4,6 +4,13 @@ function fetchRepos(e) {
     .then(response => response.text())
     .then((result) => {
         var repo = JSON.parse(result);
+        if(repo.length == 0)
+        {
+            document.getElementById('no-user').innerHTML = "No such user exists";   
+        }
+        else
+        {
+        window.location.replace("info.html");
         var repoList = '<div class="container"><center>';
         for (index = 0; index < repo.length; index++) {
            repoList += `<div class="card" style="width: 18rem;">
@@ -19,6 +26,7 @@ function fetchRepos(e) {
         }
         repoList += '</center></div>';
         document.getElementById('info').innerHTML = repoList;
+        }
     })
     .catch(error => console.log('error', error));
 }

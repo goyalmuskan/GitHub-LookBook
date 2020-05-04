@@ -17,34 +17,24 @@
       <div id="particles-js"></div>
       <script type="text/javascript" src="./assets/scripts/particles.js"></script>
       <script type="text/javascript" src="./assets/scripts/app.js"></script>
-      <div class="main container py-2">
-            <center>
+      <center>
+        <div class="main container py-2">
               <div class="main-content">
                 <img src="./assets/images/github.png" width="250px">
                 <br>
               <p class="mb-5">GitHub LookBook.</p>
-              <input type="text" id="name" placeholder="Enter a github username...">
-            <script type="text/javascript">
-              const name = document.getElementById('name');
-              name.addEventListener('keydown', (e) => {
-                if (e.key === 'Enter') {
-                  fetchRepos(e);
-                  }
-              });
-            </script>
+              <input type="text" id="name" placeholder="Enter a github username..." autocomplete="off">
               <!--<button class="btn btn-md repo" onClick="fetchRepos()">FETCH INFO</button>-->
               </div>
-            </center>
         </div>
-        <section id="info">
+        <br>
+        <p id="no-user"> <br> </p>      
 
-        </section>
         <div class="footer">
-          <center>
           <p>Made With ❤️ by <span style="color: blueviolet;">@</span><a href="https://github.com/goyalmuskan">goyalmuskan</a>.</p>
           <a class="follow" href="https://github.com/goyalmuskan"><img src="https://img.shields.io/github/followers/goyalmuskan?label=Follow%20%40goyalmuskan&style=for-the-badge"></a>
-          </center>
         </div> 
+      </center>
       <!--
         <footer>
             <hr class="my-1">
@@ -56,6 +46,18 @@
             </center>
         </footer>
       -->
-        <script src="./assets/scripts/script.js"></script>
+      <script type="text/javascript">
+        let name = document.getElementById('name');
+        let username = document.getElementById('name').value;
+        name.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter') {
+            if (name.length != 0) {
+              fetchRepos(e);
+              // window.location.replace("info.html");
+            }
+            }
+        });
+      </script>
+      <script src="./assets/scripts/script.js"></script>
     </body>
 </html>
