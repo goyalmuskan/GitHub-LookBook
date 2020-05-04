@@ -24,7 +24,15 @@
                 <br>
               <p class="mb-5">GitHub LookBook.</p>
               <input type="text" id="name" placeholder="Enter a github username...">
-              <button class="btn btn-md repo" onClick="fetchRepos()">FETCH INFO</button>
+            <script type="text/javascript">
+              const name = document.getElementById('name');
+              name.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter') {
+                  fetchRepos(e);
+                  }
+              });
+            </script>
+              <!--<button class="btn btn-md repo" onClick="fetchRepos()">FETCH INFO</button>-->
               </div>
             </center>
         </div>

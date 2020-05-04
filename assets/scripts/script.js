@@ -1,4 +1,4 @@
-function fetchRepos() {
+function fetchRepos(e) {
     var username = document.getElementById('name').value;
     fetch("https://api.github.com/users/"+username+"/repos?per_page=150", {method : 'GET'})
     .then(response => response.text())
