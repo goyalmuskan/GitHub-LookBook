@@ -6,7 +6,7 @@ function fetchRepos(e) {
         var repo = JSON.parse(result);
         if(repo.length == 0)
         {
-            document.getElementById('no-user').innerHTML = "No such user exists";   
+            document.getElementById('no-user').innerHTML = "No repositories found.";   
         }
         else
         {

@@ -24,28 +24,18 @@
                 <br>
               <p class="mb-5">GitHub LookBook.</p>
               <input type="text" id="name" placeholder="Enter a github username..." autocomplete="off">
-              <!--<button class="btn btn-md repo" onClick="fetchRepos()">FETCH INFO</button>-->
               </div>
         </div>
         <br>
-        <p id="no-user"> <br> </p>      
+        <p id="no-user"> <br> </p>  
+      </center>   
 
-        <div class="footer">
+        <div class="footer mb-3">
           <p>Made With ❤️ by <span style="color: blueviolet;">@</span><a href="https://github.com/goyalmuskan">goyalmuskan</a>.</p>
           <a class="follow" href="https://github.com/goyalmuskan"><img src="https://img.shields.io/github/followers/goyalmuskan?label=Follow%20%40goyalmuskan&style=for-the-badge"></a>
         </div> 
-      </center>
-      <!--
-        <footer>
-            <hr class="my-1">
-            <center>
-            <div class="my-2">Made With ❤ by MUSKAN GOYAL.</div>
-            <div class="my-2">
-            <i class="fa fa-linkedin"></i> &nbsp; <i class="fa fa-github"></i> &nbsp; <i class="fa fa-envelope"></i>
-            </div>
-            </center>
-        </footer>
-      -->
+
+
       <script type="text/javascript">
         let name = document.getElementById('name');
         let username = document.getElementById('name').value;
@@ -53,11 +43,12 @@
           if (e.key === 'Enter') {
             if (name.length != 0) {
               fetchRepos(e);
-              // window.location.replace("info.html");
             }
             }
         });
       </script>
+
+      
       <script src="./assets/scripts/script.js"></script>
     </body>
 </html>
