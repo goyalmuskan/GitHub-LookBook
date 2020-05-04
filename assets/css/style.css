@@ -2,7 +2,6 @@ body,
 html {
     margin: 0;
     padding: 0;
-    color: white;
     min-height: 100vh;
 }
 
@@ -21,6 +20,7 @@ input:focus {
 }
 
 .main-content {
+    color: white;
     margin-top: 12vh;
 }
 
@@ -29,23 +29,8 @@ input:focus {
     font-weight: bold;
 }
 
-.repo {
-    background-color: blueviolet;
-    border: none;
-    color: white;
-    font-weight: bold;
-    border-radius: 10em;
-    padding: 14px 20px;
-}
-
-.repo:hover {
-    background-color: rgb(103, 34, 168);
-    border: none;
-    color: white;
-    cursor: pointer;
-}
-
 .footer {
+    color: white;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -56,11 +41,11 @@ input:focus {
 
 .footer a {
     text-decoration: none;
-    color: blueviolet;
+    color: rgb(1, 6, 49);
 }
 
 .footer a:hover {
-    border-bottom: 2px solid blueviolet;
+    border-bottom: 2px solid rgb(1, 6, 49);
 }
 
 .footer .follow:hover {
@@ -71,5 +56,93 @@ input:focus {
     position: fixed;
     width: 100%;
     z-index: -1;
-    background-color: rgb(0, 0, 0);
+    background-image: linear-gradient(to top, #238181 0%, #330867 100%);
+}
+
+.follow img {
+    margin-bottom: 8px;
+}
+
+.animated {
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 2.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes bounce {
+
+    0%,
+    20%,
+    40%,
+    60%,
+    80%,
+    100% {
+        -webkit-transform: translateY(0);
+    }
+
+    50% {
+        -webkit-transform: translateY(-30px);
+    }
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    40%,
+    60%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-30px);
+    }
+}
+
+.bounce {
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+}
+
+#hidden-sec {
+    display: none;
+}
+
+.hidden-sec input {
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    padding: 10px 15px;
+    border: none;
+    text-align: center;
+    margin-left: 10px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.hidden-sec span {
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.home {
+    text-decoration: none;
+    color: white;
+    transition: 0.6s;
+}
+
+.home:hover {
+    text-decoration: none;
+    transition: 0.6s;
+    color: rgba(255, 255, 255, 0.685);
 }

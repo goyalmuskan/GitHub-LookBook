@@ -21,39 +21,58 @@
   <script type="text/javascript" src="./assets/scripts/particles.js"></script>
   <script type="text/javascript" src="./assets/scripts/app.js"></script>
   <center>
-    <div class="main container py-2">
+    <div class="main container py-2" id="main">
       <div class="main-content">
-        <img src="./assets/images/github.png" width="250px">
+        <img src="./assets/images/github.png" width="250px" class="animated bounce">
         <br>
         <p class="mb-5">GitHub LookBook.</p>
-        <input type="text" id="name" placeholder="Enter a github username..." autocomplete="off">
+        <input type="text" id="name" placeholder="Enter a github username..." autocomplete="off" onkeypress="first()">
       </div>
     </div>
     <br>
+    <section class="hidden-sec" id="hidden-sec">
+      <div><span><a class="home" href="index.html">GitHub LookBook</a></span> <input type="text" id="name-2" placeholder="Search again..." autocomplete="off"
+          onkeypress="second()"></div>
+      <br><br>
+    </section>
     <section id="info">
       <br>
     </section>
   </center>
 
   <div class="footer">
-    <p>Made With ❤️ by <span style="color: blueviolet;">@</span><a
+    <p>Made With ❤️ by <span style="color: rgb(1, 6, 49);">@</span><a
         href="https://github.com/goyalmuskan">goyalmuskan</a>.</p>
     <a class="follow" href="https://github.com/goyalmuskan"><img
-        src="https://img.shields.io/github/followers/goyalmuskan?label=Follow%20%40goyalmuskan&style=for-the-badge"></a>
+        src="https://img.shields.io/github/followers/goyalmuskan?label=Follow%20%40goyalmuskan&style=for-the-badge"></a><br>
+    <a class="follow" href="https://github.com/goyalmuskan/GitHub-LookBook"><img
+        src="https://img.shields.io/github/forks/goyalmuskan/GitHub-LookBook?label=Fork%20me&logoColor=black&style=flat-square"></a>
   </div>
 
-
   <script type="text/javascript">
-    let name = document.getElementById('name');
-    name.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter') {
-        if (name.length != 0) {
-          fetchRepos(e);
+    function first() {
+      let name = document.getElementById('name');
+      name.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+          if (name.length != 0) {
+            fetchRepos(name.value);
+          }
         }
-      }
-    });
-  </script>
+      });
+    };
 
+    function second() {
+      let name = document.getElementById('name-2');
+      name.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+          if (name.length != 0) {
+            fetchRepos(name.value);
+          }
+        }
+      });
+
+    }
+  </script>
 
   <script src="./assets/scripts/script.js"></script>
 </body>

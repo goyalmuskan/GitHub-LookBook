@@ -1,5 +1,5 @@
-function fetchRepos(e) {
-    var username = document.getElementById('name').value;
+function fetchRepos(name) {
+    var username = name;
     fetch("https://api.github.com/users/" + username + "/repos?per_page=150", {
             method: 'GET'
         })
@@ -9,6 +9,8 @@ function fetchRepos(e) {
             if (repo.length == 0) {
                 document.getElementById('info').innerHTML = "<p>No repositories found.</p>";
             } else {
+                document.getElementById('main').innerHTML = "";
+                document.getElementById('hidden-sec').style.display = "inline"
                 var repoList = '<div class="container"><center>';
                 for (index = 0; index < repo.length; index++) {
                     repoList += `<div class="card" style="width: 18rem;">
