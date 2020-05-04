@@ -1,7 +1,8 @@
-body, html{
+body,
+html {
     margin: 0;
     padding: 0;
-    min-height: 100vh;
+    height: auto;
     color: white;
 }
 
@@ -50,7 +51,7 @@ footer .fa {
     color: rgba(137, 43, 226, 0.699);
 }*/
 
-.main input{
+.main input {
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     border-radius: 50px;
@@ -68,7 +69,7 @@ input:focus {
     margin-top: 12vh;
 }
 
-.main-content p{
+.main-content p {
     font-size: 45px;
     font-weight: bold;
 }
@@ -90,26 +91,26 @@ input:focus {
 }
 
 .footer {
-    clear : both;
-    margin-left : auto;
-    margin-right : auto;
-    text-align : center;
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
     position: absolute;
     width: 100%;
     height: auto;
     bottom: 0;
 }
 
-.footer a{
+.footer a {
     text-decoration: none;
     color: blueviolet;
 }
 
-.footer a:hover{
+.footer a:hover {
     border-bottom: 2px solid blueviolet;
 }
 
-.footer .follow:hover{
+.footer .follow:hover {
     border-bottom: none;
 }
 
@@ -124,4 +125,3 @@ input:focus {
     z-index: -1;
     background-color: rgb(0, 0, 0);
 }
-

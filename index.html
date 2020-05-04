@@ -1,54 +1,60 @@
 <html>
-    <head>
-        <title>GitHub LookBook</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-        <!-- Latest compiled JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-        <!--- Font Awesome Icons -->
-        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> 
-        <!--- Default Stylesheet -->
-        <link href="./assets/css/style.css" rel="stylesheet">
-    </head>
-    <body>
-      <div id="particles-js"></div>
-      <script type="text/javascript" src="./assets/scripts/particles.js"></script>
-      <script type="text/javascript" src="./assets/scripts/app.js"></script>
-      <center>
-        <div class="main container py-2">
-              <div class="main-content">
-                <img src="./assets/images/github.png" width="250px">
-                <br>
-              <p class="mb-5">GitHub LookBook.</p>
-              <input type="text" id="name" placeholder="Enter a github username..." autocomplete="off">
-              </div>
-        </div>
+
+<head>
+  <title>GitHub LookBook</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+    integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <!--- Font Awesome Icons -->
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <!--- Default Stylesheet -->
+  <link href="./assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="particles-js"></div>
+  <script type="text/javascript" src="./assets/scripts/particles.js"></script>
+  <script type="text/javascript" src="./assets/scripts/app.js"></script>
+  <center>
+    <div class="main container py-2">
+      <div class="main-content">
+        <img src="./assets/images/github.png" width="250px">
         <br>
-        <p id="no-user"> <br> </p>  
-      </center>   
+        <p class="mb-5">GitHub LookBook.</p>
+        <input type="text" id="name" placeholder="Enter a github username..." autocomplete="off">
+      </div>
+    </div>
+    <br>
+    <p id="no-user"> <br> </p>
+  </center>
 
-        <div class="footer mb-3">
-          <p>Made With ❤️ by <span style="color: blueviolet;">@</span><a href="https://github.com/goyalmuskan">goyalmuskan</a>.</p>
-          <a class="follow" href="https://github.com/goyalmuskan"><img src="https://img.shields.io/github/followers/goyalmuskan?label=Follow%20%40goyalmuskan&style=for-the-badge"></a>
-        </div> 
+  <div class="footer mb-3">
+    <p>Made With ❤️ by <span style="color: blueviolet;">@</span><a
+        href="https://github.com/goyalmuskan">goyalmuskan</a>.</p>
+    <a class="follow" href="https://github.com/goyalmuskan"><img
+        src="https://img.shields.io/github/followers/goyalmuskan?label=Follow%20%40goyalmuskan&style=for-the-badge"></a>
+  </div>
 
 
-      <script type="text/javascript">
-        let name = document.getElementById('name');
-        let username = document.getElementById('name').value;
-        name.addEventListener('keydown', (e) => {
-          if (e.key === 'Enter') {
-            if (name.length != 0) {
-              fetchRepos(e);
-            }
-            }
-        });
-      </script>
+  <script type="text/javascript">
+    let name = document.getElementById('name');
+    let username = document.getElementById('name').value;
+    name.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        if (name.length != 0) {
+          fetchRepos(e);
+        }
+      }
+    });
+  </script>
 
-      
-      <script src="./assets/scripts/script.js"></script>
-    </body>
+
+  <script src="./assets/scripts/script.js"></script>
+</body>
+
 </html>
