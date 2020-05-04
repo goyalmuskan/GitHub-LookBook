@@ -2,54 +2,9 @@ body,
 html {
     margin: 0;
     padding: 0;
-    height: auto;
     color: white;
+    min-height: 100vh;
 }
-
-/*
-#name {
-    width: 60%;
-}
-
-#name:focus {
-    outline: none;
-}
-
-.repo {
-    background-color: blueviolet;
-    border: none;
-    color: white;
-    font-weight: bold;
-}
-
-.repo:hover {
-    background-color: rgb(103, 34, 168);
-    border: none;
-    color: white;
-    cursor: pointer;
-}
-
-button:active {
-    outline: none;
-    border: none;
-}
-    
-button:focus {
-    outline: none !important;
-}
-
-footer {
-    background-color: azure;
-}
-
-footer hr{
-    width: 95%;
-}
-
-footer .fa {
-    font-size: 18px;
-    color: rgba(137, 43, 226, 0.699);
-}*/
 
 .main input {
     -webkit-border-radius: 50px;
@@ -91,14 +46,12 @@ input:focus {
 }
 
 .footer {
-    clear: both;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    position: absolute;
     width: 100%;
-    height: auto;
-    bottom: 0;
+    padding-top: 70px;
+    padding-bottom: 10px;
 }
 
 .footer a {
@@ -114,14 +67,9 @@ input:focus {
     border-bottom: none;
 }
 
-#info {
-    color: black;
-}
-
 #particles-js canvas {
-    position: absolute;
+    position: fixed;
     width: 100%;
-    height: 100%;
     z-index: -1;
     background-color: rgb(0, 0, 0);
 }

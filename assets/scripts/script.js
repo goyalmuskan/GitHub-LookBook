@@ -7,9 +7,8 @@ function fetchRepos(e) {
         .then((result) => {
             var repo = JSON.parse(result);
             if (repo.length == 0) {
-                document.getElementById('no-user').innerHTML = "No repositories found.";
+                document.getElementById('info').innerHTML = "<p>No repositories found.</p>";
             } else {
-                window.location.replace("info.html");
                 var repoList = '<div class="container"><center>';
                 for (index = 0; index < repo.length; index++) {
                     repoList += `<div class="card" style="width: 18rem;">
