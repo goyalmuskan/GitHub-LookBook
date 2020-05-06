@@ -164,15 +164,14 @@ input:focus {
     flex: 1 1 auto;
     min-height: 1px;
     padding: 1rem;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(5, 5, 5);
     color: rgb(235, 232, 232);
+    border: none;
 }
 
 .card-body a{
     color: white;
     text-decoration: none;
-    border-width: 20%;
-    border-bottom: 2px solid white;    
 }
 
 .card-body a:hover{
@@ -180,4 +179,8 @@ input:focus {
     text-decoration: none;
     border-bottom: 2px solid white;  
     border-width: 100%;  
+}
+
+.card{
+    border:none;
 }
