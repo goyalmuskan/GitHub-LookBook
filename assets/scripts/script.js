@@ -7,6 +7,11 @@ function fetchRepos(name) {
         .then(response => response.text())
         .then((result) => {
             var repo = JSON.parse(result);
+            repo.sort(function (a, b) {
+                var dateA = new Date(a.updated_at),
+                    dateB = new Date(b.updated_at)
+                return dateB - dateA //sort by date descending
+            })
             if (repo.length == 0) {
                 document.getElementById('info').innerHTML = "<p>No repositories found.</p>";
                 document.getElementById('info').style.backgroundColor = "transparent";
@@ -62,56 +67,33 @@ function info(name) {
         .catch(error => console.log('error', error));
 }
 
-function date(date){
+function date(date) {
     var format = date.split("T");
     var datenew = format[0].split("-");
-    if (datenew[1] == 01)
-    {
+    if (datenew[1] == 01) {
         datenew[1] = "January";
-    }
-    else if (datenew[1] == 02)
-    {
+    } else if (datenew[1] == 02) {
         datenew[1] = "February";
-    }
-    else if (datenew[1] == 03)
-    {
+    } else if (datenew[1] == 03) {
         datenew[1] = "March";
-    }
-    else if (datenew[1] == 04)
-    {
+    } else if (datenew[1] == 04) {
         datenew[1] = "April";
-    }
-    else if (datenew[1] == 05)
-    {
+    } else if (datenew[1] == 05) {
         datenew[1] = "May";
-    }
-    else if (datenew[1] == 06)
-    {
+    } else if (datenew[1] == 06) {
         datenew[1] = "June";
-    }
-    else if (datenew[1] == 07)
-    {
+    } else if (datenew[1] == 07) {
         datenew[1] = "July";
-    }
-    else if (datenew[1] == 08)
-    {
+    } else if (datenew[1] == 08) {
         datenew[1] = "August";
-    }
-    else if (datenew[1] == 09)
-    {
+    } else if (datenew[1] == 09) {
         datenew[1] = "September";
-    }
-    else if (datenew[1] == 10)
-    {
+    } else if (datenew[1] == 10) {
         datenew[1] = "October";
-    }
-    else if (datenew[1] == 11)
-    {
+    } else if (datenew[1] == 11) {
         datenew[1] = "November";
-    }
-    else if (datenew[1] == 12)
-    {
+    } else if (datenew[1] == 12) {
         datenew[1] = "December";
     }
-    return datenew[2] + " " + datenew[1] + ", " + datenew[0]; 
+    return datenew[2] + " " + datenew[1] + ", " + datenew[0];
 }
