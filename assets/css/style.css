@@ -186,12 +186,24 @@ input:focus {
 }
 
 .link{
-    color: white;
+    color: rgb(207, 207, 207);
     text-decoration: none;
 }
 
 .link:hover{
-    color: white;
+    color: rgb(207, 207, 207);
     text-decoration: none;
 }
 
+.user {
+    color :white;
+    text-align: center;
+}
+
+.nameg {
+    color: white;
+}
+
+.data {
+    background-color: rgb(0, 1, 12);
+}
