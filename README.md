@@ -1,8 +1,9 @@
 # GitHub-LookBook
 
 Enter a username to discover their GitHub profile.
-.
-.
+
+
+
 Made With ❤ by MUSKAN GOYAL.
 
 
